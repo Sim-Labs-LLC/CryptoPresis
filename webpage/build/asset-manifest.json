@@ -1,11 +1,11 @@
 {
-  "main.css": "/static/css/main.ebc0a450.chunk.css",
-  "main.js": "/static/js/main.87303724.chunk.js",
-  "main.js.map": "/static/js/main.87303724.chunk.js.map",
+  "main.css": "/static/css/main.588bf018.chunk.css",
+  "main.js": "/static/js/main.2b67390b.chunk.js",
+  "main.js.map": "/static/js/main.2b67390b.chunk.js.map",
   "static/js/1.8c5a734f.chunk.js": "/static/js/1.8c5a734f.chunk.js",
   "static/js/1.8c5a734f.chunk.js.map": "/static/js/1.8c5a734f.chunk.js.map",
-  "static/js/2.b9402b7b.chunk.js": "/static/js/2.b9402b7b.chunk.js",
-  "static/js/2.b9402b7b.chunk.js.map": "/static/js/2.b9402b7b.chunk.js.map",
+  "static/js/2.0e2330d3.chunk.js": "/static/js/2.0e2330d3.chunk.js",
+  "static/js/2.0e2330d3.chunk.js.map": "/static/js/2.0e2330d3.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.be8870cf.js",
   "runtime~main.js.map": "/static/js/runtime~main.be8870cf.js.map",
   "static/media/collage.png": "/static/media/collage.4ccbb65c.png",
@@ -18,8 +18,8 @@
   "static/media/example.gif": "/static/media/example.96e5e287.gif",
   "static/media/bb-marquez.png": "/static/media/bb-marquez.b4dc54f3.png",
   "static/media/reset.css": "/static/media/PressStart2P-Regular.027246ff.woff",
-  "static/css/main.ebc0a450.chunk.css.map": "/static/css/main.ebc0a450.chunk.css.map",
+  "static/css/main.588bf018.chunk.css.map": "/static/css/main.588bf018.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.c466027d8f563de40131ea2101955fcf.js": "/precache-manifest.c466027d8f563de40131ea2101955fcf.js",
+  "precache-manifest.9be99485565a1537b552936f59eb5cde.js": "/precache-manifest.9be99485565a1537b552936f59eb5cde.js",
   "service-worker.js": "/service-worker.js"
 }

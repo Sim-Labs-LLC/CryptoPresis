@@ -162,7 +162,7 @@ const Collection = ({
                                 >{buttonlabel}</Button>
                             </BtnWrap>
                             <BtnWrap>
-                                <Button href='//mintable.app/store/CryptoPresis-Sim-Labs-LLC/0x3ee15e0b8d236f7741ca5c1259fbcf1544e51621' target="_blank"
+                                <Button href='//looksrare.org/collections/0x3ee15e0b8d236f7741ca5c1259fbcf1544e51621' target="_blank"
                                     smooth={true}
                                     duration={500}
                                     spy={true}

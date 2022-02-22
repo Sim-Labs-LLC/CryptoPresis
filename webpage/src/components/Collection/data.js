@@ -8,7 +8,7 @@ export const homeObjTwo = {
     description: 
         "Here are some marketplaces where you can view, buy and sell your CryptoPresis.",
     buttonlabel: 'RARIBLE',
-    buttonlabel2: 'MINTABLE',
+    buttonlabel2: 'LOOKSRARE',
     imgStart: false,
     img: require('../../assets/images/collage.png'),
     alt: 'NFTs', 
