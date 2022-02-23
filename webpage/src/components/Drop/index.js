@@ -18,7 +18,7 @@ export const DropWrapper = styled.div`
     height: 100%;
     max-height: 970px;
     width: 100%;
-    // max-width: 1100px;
+    max-width: 1500px;
     margin-right: auto;
     margin-left: auto;
     justify-content: center; 

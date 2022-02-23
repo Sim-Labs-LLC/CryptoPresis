@@ -16,7 +16,7 @@ export const FooterWrap = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    // max-width: 1100px;
+    max-width: 1500px;
     margin: 0 auto;
 `;
 
@@ -31,7 +31,7 @@ export const FooterLinksContainer = styled.div`
 
 export const FooterLinksWrapper = styled.div`
     display: flex;
-    // max-width: 1100px;
+    max-width: 1500px;
 
     @media screen and (max-width: 820px) {
         flex-direction: column;

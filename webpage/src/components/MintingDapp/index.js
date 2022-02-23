@@ -25,7 +25,7 @@ export const ResponsiveWrapper = styled.div`
   justify-content: stretched;
   align-items: stretched;
   width: 100%;
-  // max-width: 1100px;
+  max-width: 1500px;
   @media (min-width: 1100px) {
     flex-direction: row;
   }

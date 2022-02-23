@@ -17,7 +17,7 @@ export const FaqContainer = styled.div`
 export const FaqRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(3fr, 1fr);
-    // max-width: 1100px;
+    max-width: 1500px;
     align-items: center;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'` )};
 
@@ -32,7 +32,7 @@ export const FaqWrapper = styled.div`
     height: 100%;
     max-height: 1600px;
     width: 100%;
-    // max-width: 1100px;
+    max-width: 1500px;
     margin-right: auto;
     margin-left: auto;
     justify-content: center; 
@@ -42,7 +42,7 @@ export const TitleContainer = styled.div`
     display: flex;
     padding: 24px 0 24px 0;
     width: 100%;
-    // max-width: 1100px;
+    max-width: 1500px;
     justify-content: center;
 `;
 
@@ -70,7 +70,6 @@ export const Wrap = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    // max-width: 1200px;
     text-align: center;
     cursor: pointer;
     border-bottom: 1px solid #00ffff;
@@ -95,7 +94,6 @@ export const Wrap = styled.div`
 export const Dropdown = styled.div`
     background: #000;
     color: #fff;
-    // max-width: 1200px;
     height: 100px;
     display: flex;
     flex-direction: column;

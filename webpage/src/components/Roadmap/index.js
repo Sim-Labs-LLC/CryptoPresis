@@ -20,7 +20,7 @@ export const InfoContainer = styled.div `
 `;
 
 export const InfoRow = styled.div`
-    max-width: 1100px;
+    max-width: 1500px;
     margin: 0 auto;
     border-left: 4px solid #fff;
     padding-left: 25px
@@ -32,7 +32,7 @@ export const InfoWrapper = styled.div`
     height: 100%;
     max-height: 2000px;
     width: 100%;
-    // max-width: 1100px;
+    max-width: 1500px;
     margin-right: auto;
     margin-left: auto;
     justify-content: center; 
@@ -46,7 +46,6 @@ export const TitleContainer = styled.div`
     display: flex;
     padding: 24px 0 24px 0;
     width: 100%;
-    // max-width: 1100px;
     justify-content: center;
 `;
 
@@ -107,7 +106,8 @@ export const Heading = styled.h1`
 export const Heading2 = styled.h2`
     font-size: 18px;
     margin: 0;
-    border-bottom: 0.5px solid #fff;
+    font-style: bold;
+    // border-bottom: 0.5px solid #fff;
     color: #fff;
 `;
 

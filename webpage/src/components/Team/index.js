@@ -37,7 +37,7 @@ export const TeamContainer = styled.div`
 
 export const TeamWrapper = styled.div`
     width: 80%;
-    max-width: 1100px;
+    max-width: 1500px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

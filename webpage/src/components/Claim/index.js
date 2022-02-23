@@ -12,7 +12,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.iframe`
-    max-width: 1000px;
+    max-width: 1500px;
     display: grid;
     z-index: 1;
     width: 100%;

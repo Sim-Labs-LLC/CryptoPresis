@@ -16,7 +16,7 @@ export const InfoRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(5fr, 1fr);
     width: 100%;
-    // max-width: 1100px;
+    max-width: 1500px;
     align-items: center;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'` )};
 
@@ -31,7 +31,7 @@ export const InfoWrapper = styled.div`
     height: 100%;
     max-height: 970px;
     width: 100%;
-    // max-width: 1100px;
+    max-width: 1500px;
     margin-right: auto;
     margin-left: auto;
     justify-content: center; 
@@ -47,16 +47,6 @@ export const TextWrapper = styled.div`
         padding: 0 15px;
     }
 `;
-
-// export const TopLine = styled.p`
-//     color: #00ffff;
-//     font-size: 16px;
-//     line-height: 16px;
-//     font-weight: 700;
-//     letter-spacing: 1.4px;
-//     text-transform: uppercase;
-//     margin-bottom: 16px;
-// `;
 
 export const Heading = styled.h1`
     margin-bottom: 24px;
