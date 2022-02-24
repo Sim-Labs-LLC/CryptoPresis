@@ -1,6 +1,6 @@
 import React from 'react'
 import DropSection from '../components/Drop';
-import { homeObjOne } from '../components/Drop/data';
+import { homeObjOne, homeObjTwo } from '../components/Drop/data';
 import DropIntroSection from '../components/DropIntro';
 
 const DropPage = () => {
@@ -8,6 +8,7 @@ const DropPage = () => {
         <>
             <DropIntroSection {...homeObjOne} />
             <DropSection {...homeObjOne} />
+            <DropSection {...homeObjTwo} />
         </>
     );
 };

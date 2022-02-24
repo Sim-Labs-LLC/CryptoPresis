@@ -269,61 +269,31 @@ function Dapp() {
   }, [blockchain.account]);
 
   return (
-    <Container id="Mint" flex={1}
-    ai={"center"}
-    style={{ padding: 48, backgroundColor: "#000000" }}
-    >
+    <Container id="Mint" flex={1} ai={"center"} style={{ padding: 48, backgroundColor: "#000000" }} >
       <Heading>
-      BUY A PRESI
+        BUY A PRESI
       </Heading>
       <ResponsiveWrapper flex={1} >
-        {/* <SpacerLarge /> */}
-        <Container
-          flex={2}
-          jc={"center"}
-          ai={"center"}
-          style={{
+        <Container flex={2} jc={"center"} ai={"center"} style={{
             backgroundColor: "#000000",
             padding: 24,
             borderRadius: 24,
             border: "4px dashed #00FFFF",
             boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
-          }}
-        >
-          <TextTitle
-            style={{
-              textAlign: "center",
-              fontSize: 20,
-              fontWeight: "bold",
-              color: "#FFFFFF",
-            }}
-          >
-            <TextTitle 
-              style={{
-                textAlign: "center",
-                fontSize: 16,
-                fontWeight: "bold",
-                color: "#FFFFFF",
-              }}
-            >
-            LIMITED COLLECTION
+          }} >
+          <TextTitle style={{ textAlign: "center", fontSize: 20, fontWeight: "bold", color: "#FFFFFF", }} >
+            <TextTitle style={{ textAlign: "center", fontSize: 16, fontWeight: "bold", color: "#FFFFFF", }} >
+              LIMITED COLLECTION
             </TextTitle>
             <SpacerXSmall />
-            {CONFIG.MAX_SUPPLY - data.totalSupply} REMAINING
-            {/*{data.totalSupply} / {CONFIG.MAX_SUPPLY}*/}
+              {CONFIG.MAX_SUPPLY - data.totalSupply} REMAINING
+              {/*{data.totalSupply} / {CONFIG.MAX_SUPPLY}*/}
           </TextTitle>
-          <TextDescription
-              style={{ textAlign: "center", color: "#FFFFFF" }}
-            >
+          <TextDescription style={{ textAlign: "center", color: "#FFFFFF" }} >
               connect wallet to view remaining supply.
           </TextDescription>
           <SpacerXSmall />
-          <TextDescription
-            style={{
-              textAlign: "center",
-              color: "#FFFFFF",
-            }}
-          >
+          <TextDescription style={{ textAlign: "center", color: "#FFFFFF", }} >
             <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
               {/*{truncate(CONFIG.CONTRACT_ADDRESS, 15)}*/}
               {(CONFIG.CONTRACT_ADDRESS, "Etherscan")}
@@ -332,66 +302,42 @@ function Dapp() {
           <SpacerSmall />
           {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
             <>
-              <TextTitle
-                style={{ textAlign: "center", color: "#FFFFFF" }}
-              >
+              <TextTitle style={{ textAlign: "center", color: "#FFFFFF" }} >
                 The sale has ended.
               </TextTitle>
-              <TextDescription
-                style={{ textAlign: "center", color: "#FFFFFF" }}
-              >
+              <TextDescription style={{ textAlign: "center", color: "#FFFFFF" }} >
                 You can still find {CONFIG.NFT_NAME} on
               </TextDescription>
               <SpacerSmall />
-              <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
+              <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK} >
                 {CONFIG.MARKETPLACE}
               </StyledLink>
             </>
           ) : (
             <>
-              <TextTitle
-                style={{ textAlign: "center", color: "#FFFFFF" }}
-              >
+              <TextTitle style={{ textAlign: "center", color: "#FFFFFF" }} >
                 1 {CONFIG.NFT_NAME} costs {CONFIG.DISPLAY_COST}{" "}
                 {CONFIG.NETWORK.SYMBOL}.
               </TextTitle>
               <SpacerXSmall />
-              <TextDescription
-                style={{ textAlign: "center", color: "#FFFFFF" }}
-              >
+              <TextDescription style={{ textAlign: "center", color: "#FFFFFF" }} >
                 Excluding gas fees.
               </TextDescription>
               <SpacerSmall />
               {blockchain.account === "" ||
               blockchain.smartContract === null ? (
                 <Container ai={"center"} jc={"center"}>
-                  <TextDescription
-                    style={{
-                      textAlign: "center",
-                      color: "#FFFFFF",
-                    }}
-                  >
+                  <TextDescription style={{ textAlign: "center", color: "#FFFFFF", }} >
                     Connect to the {CONFIG.NETWORK.NAME} network to buy CryptoPresis
                   </TextDescription>
                   <SpacerSmall />
-                  <StyledButton
-                    onClick={(e) => {
-                      e.preventDefault();
-                      dispatch(connect());
-                      getData();
-                    }}
-                  >
+                  <StyledButton onClick={(e) => { e.preventDefault(); dispatch(connect()); getData(); }} >
                     BUY
                   </StyledButton>
                   {blockchain.errorMsg !== "" ? (
                     <>
                       <SpacerSmall />
-                      <TextDescription
-                        style={{
-                          textAlign: "center",
-                          color: "#FFFFFF",
-                        }}
-                      >
+                      <TextDescription style={{ extAlign: "center", color: "#FFFFFF", }} >
                         {blockchain.errorMsg}
                       </TextDescription>
                     </>
@@ -399,57 +345,31 @@ function Dapp() {
                 </Container>
               ) : (
                 <>
-                  <TextDescription
-                    style={{
-                      textAlign: "center",
-                      color: "#FFFFFF",
-                    }}
-                  >
+                  <TextDescription style={{ textAlign: "center", color: "#FFFFFF", }} >
                     {feedback}
                   </TextDescription>
                   <SpacerMedium />
                   <Container ai={"center"} jc={"center"} fd={"row"}>
-                    <StyledRoundButton
-                      style={{ lineHeight: 0.4 }}
-                      disabled={claimingNft ? 1 : 0}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        decrementMintAmount();
-                      }}
-                    >
+                    <StyledRoundButton style={{ lineHeight: 0.4 }} disabled={claimingNft ? 1 : 0} onClick={(e) => {
+                        e.preventDefault(); decrementMintAmount();
+                      }} >
                       -
                     </StyledRoundButton>
                     <SpacerMedium />
-                    <TextDescription
-                      style={{
-                        textAlign: "center",
-                        color: "#FFFFFF",
-                        fontSize: "18px",
-                      }}
-                    >
+                    <TextDescription style={{ textAlign: "center", color: "#FFFFFF", fontSize: "18px", }} >
                       {mintAmount}
                     </TextDescription>
                     <SpacerMedium />
-                    <StyledRoundButton
-                      disabled={claimingNft ? 1 : 0}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        incrementMintAmount();
-                      }}
-                    >
+                    <StyledRoundButton disabled={claimingNft ? 1 : 0} onClick={(e) => {
+                      e.preventDefault(); incrementMintAmount(); 
+                    }} >
                       +
                     </StyledRoundButton>
                   </Container>
                   <SpacerSmall />
                   <Container ai={"center"} jc={"center"} fd={"row"}>
-                    <StyledButton
-                      disabled={claimingNft ? 1 : 0}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        claimNFTs();
-                        getData();
-                      }}
-                    >
+                    <StyledButton disabled={claimingNft ? 1 : 0} onClick={(e) => {
+                        e.preventDefault(); claimNFTs(); getData(); }} >
                       {claimingNft ? "BUSY" : "BUY"}
                     </StyledButton>
                   </Container>
