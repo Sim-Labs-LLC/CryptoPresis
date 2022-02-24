@@ -1,0 +1,9 @@
+[build]
+    command = "npm run build"
+    publish = "/build"
+    base = "webpage/"
+
+[[redirects]]
+    from = "/drop"
+    to = "/index.html"
+    status = 200
