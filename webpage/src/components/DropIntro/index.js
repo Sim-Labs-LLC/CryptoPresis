@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-// import { Button } from '../ButtonElements';
 
 export const InfoContainer = styled.div`
     color: #fff;

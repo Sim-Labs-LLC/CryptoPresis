@@ -5,7 +5,7 @@ import DropPage from './pages/drop';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
-import MintPage from './pages/mint';
+// import MintPage from './pages/mint';
 
 function App() {
 
@@ -22,7 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/drop" element={<DropPage />} />
-        <Route path="/mint" element={<MintPage />} />
+        {/* <Route path="/mint" element={<MintPage />} /> */}
       </Routes>
       <Footer />
     </Router>

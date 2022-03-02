@@ -130,7 +130,8 @@ const DropSection = ({
     description2, 
     description3,  
     buttonlabel, 
-    img, 
+    img,
+    link, 
     alt,
     primary,
     dark,
@@ -156,7 +157,7 @@ const DropSection = ({
                             </ImgWrap>
                             <BtnWrap>
                                 <Button
-                                    href="//opensea.io/assets/matic/0xb7d67be516e80f05259cddb9efa3523f72e2f912/0/"
+                                    href={link}
                                     target="_blank"
                                     smooth={true}
                                     duration={500}

@@ -5,7 +5,7 @@ export const MenuItems = [
         cName: 'dropdown-link'
     },
     {
-        Title: 'MERCH',
+        Title: 'MERCH (coming soon)',
         Path: '/',
         cName: 'dropdown-link'
     }
