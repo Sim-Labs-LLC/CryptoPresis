@@ -13,7 +13,7 @@ export const InfoContainer = styled.div`
 `;
 
 export const InfoRow = styled.div`
-    display: grid;
+    display: flex;
     grid-auto-columns: minmax(5fr, 1fr);
     width: 100%;
     max-width: 1500px;
@@ -77,7 +77,7 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
     width: 100%;
-    // margin-bottom: 35px;
+    margin-bottom: 16px;
     text-align: justify;
     font-size: 12px;
     line-height: 18px;
@@ -118,8 +118,11 @@ const Collection = ({
     lightText, 
     headline, 
     darkText, 
-    description, 
+    description,
+    description1,
+    description2, 
     buttonlabel,
+    buttonlabel1,
     buttonlabel2,
     // img, 
     // alt,
@@ -136,9 +139,23 @@ const Collection = ({
                             <TextWrapper>
                                 <Heading lightText={lightText}>{headline}</Heading>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
+                                <Subtitle darkText={darkText}>{description1}</Subtitle>
+                                <Subtitle darkText={darkText}>{description2}</Subtitle>
                             </TextWrapper>
                         </Column1>
                         <Column2>
+                            <BtnWrap>
+                                <Button href='//opensea.io/collection/cryptopresisoffcial' target="_blank"
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact="true"
+                                    offset={-80}
+                                    primary={primary ? 1 : 0}
+                                    dark={dark ? 1 : 0}
+                                    dark2={dark2 ? 1 : 0}
+                                >{buttonlabel}</Button>
+                            </BtnWrap>
                             <BtnWrap>
                                 <Button href='//rarible.com/cryptopresisofficial' target="_blank"
                                     smooth={true}
@@ -149,7 +166,7 @@ const Collection = ({
                                     primary={primary ? 1 : 0}
                                     dark={dark ? 1 : 0}
                                     dark2={dark2 ? 1 : 0}
-                                >{buttonlabel}</Button>
+                                >{buttonlabel1}</Button>
                             </BtnWrap>
                             <BtnWrap>
                                 <Button href='//looksrare.org/collections/0x3ee15e0b8d236f7741ca5c1259fbcf1544e51621' target="_blank"
