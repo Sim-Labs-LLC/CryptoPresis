@@ -1,134 +1,23 @@
 import React from 'react'
-import styled from 'styled-components'
-import { Link as LinkS } from 'react-scroll'
-import { Link as LinkR } from 'react-router-dom'
-import { FaTimes } from 'react-icons/fa'
-import {FaTwitter, FaInstagram, FaDiscord} from 'react-icons/fa'
+import { FaTwitter, FaInstagram } from 'react-icons/fa'
+import Icon1 from '../../assets/images/os-svg.svg';
+import Icon2 from '../../assets/images/looksrare-svg.svg';
+import Icon3 from '../../assets/images/rarible-svg.png';
 // import Dropdown from '../Dropdown';
-
-export const SidebarContainer = styled.aside`
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    display: grid;
-    align-items: center;
-    top: 0;
-    left: 0;
-    transition: 0.3s ease-in-out;
-    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
-`;
-
-export const CloseIcon = styled(FaTimes)`
-    color: #fff;
-`;
-
-export const Icon = styled.div`
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    background: transparent;
-    font-size: 2rem;
-    cursor: pointer;
-    outline: none;
-`;
-
-export const SideBarWrapper = styled.div`
-    color: #fff;
-`
-
-export const SidebarMenu = styled.ul`
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 80px);
-    text-align: center;
-
-    @media screen and (max-width: 480px) {
-        grid-template-rows: repeat(6, 60px);
-    }
-`
-
-export const SidebarItem = styled.li`
-    height: 100px;
-`
-
-export const SidebarLinksS = styled(LinkS)`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    text-decoration: none;
-    list-style: none;
-    transition: 0.2s ease-in-out:
-    text-decoration: none;
-    color: #fff;
-    cursor: pointer;
-
-    &:hover {
-        color: #00ffff;
-        transition: 0.2s ease-in-out;
-    }
-`
-
-export const SidebarLinksR = styled(LinkR)`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    text-decoration: none;
-    list-style: none;
-    transition: 0.2s ease-in-out:
-    text-decoration: none;
-    color: #fff;
-    cursor: pointer;
-
-    &:hover {
-        color: #00ffff;
-        transition: 0.2s ease-in-out;
-    }
-`
-
-export const SideSocialIcon = styled.div`
-    display: flex;
-    font-size: 1.2rem;
-    justify-content: center;
-`
-
-export const SocialIconLink = styled.a`
-    color: #fff;
-    margin-top: 48px;
-    font-size: 1.5rem;
-    text-decoration: none;
-    list-style: none;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-    padding: 0 10px 0 10px;
-
-    &:hover {
-        transition: all 0.2s ease-in-out;
-        color: #00ffff;
-    }
-`
-
-export const Link = styled.a`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    text-decoration: none;
-    list-style: none;
-    transition: 0.2s ease-in-out:
-    text-decoration: none;
-    color: #fff;
-    cursor: pointer;
-
-    &:hover {
-        color: #00ffff;
-        transition: 0.2s ease-in-out;
-    }
-`
+import {
+    SidebarContainer,
+    CloseIcon,
+    Icon,
+    SideBarWrapper,
+    SidebarMenu,
+    SidebarItem,
+    SidebarLinksS,
+    SidebarLinksR,
+    SideSocialIcon,
+    SocialIconLink,
+    Img,
+    // Link
+} from './SidebarElements';
 
 const Sidebar = ({isOpen, toggle}) => {
     // const [dropdown, setDropdown] = useState(false);
@@ -148,7 +37,6 @@ const Sidebar = ({isOpen, toggle}) => {
     //         setDropdown(false);
     //     }
     // };
-
     return (
         <SidebarContainer isOpen={isOpen} >
             <Icon onClick={toggle}>
@@ -210,8 +98,14 @@ const Sidebar = ({isOpen, toggle}) => {
                     <SocialIconLink href="//instagram.com/cryptopresisnft" target="_blank" aria-label="Instagram">
                         <FaInstagram />
                     </SocialIconLink>
-                    <SocialIconLink href="//discord.gg/q2pZhNKBsg" target="_blank" aria-label="Discord">
-                        <FaDiscord />
+                    <SocialIconLink href="//opensea.io/collection/cryptopresisoffcial" target="_blank" aria-label="OpenSea" >
+                        <Img src={Icon1} />
+                    </SocialIconLink>
+                    <SocialIconLink href="//rarible.com/cryptopresisofficial" target="_blank" aria-label="Rarible" >
+                        <Img src={Icon3} />
+                    </SocialIconLink>
+                    <SocialIconLink href="//looksrare.org/collections/0x3ee15e0b8d236f7741ca5c1259fbcf1544e51621" target="_blank" aria-label="LooksRare" >
+                        <Img src={Icon2} />
                     </SocialIconLink>
                 </SideSocialIcon>
             </SideBarWrapper>

@@ -5,8 +5,8 @@ import { homeObjOne } from '../components/Overview/data';
 import Dapp from '../components/MintingDapp';
 import InfiniteCollage from '../components/InfiniteCollage';
 import Roadmap from '../components/Roadmap';
-import Collection from '../components/Collection';
-import { homeObjTwo } from '../components/Collection/data';
+// import Collection from '../components/Collection';
+// import { homeObjTwo } from '../components/Collection/data';
 import Team from '../components/Team';
 import FAQ from '../components/Faq';
 
@@ -19,7 +19,7 @@ const HomePage = () => {
             <Dapp />
             <InfiniteCollage />
             <Roadmap />
-            <Collection {...homeObjTwo} />
+            {/* <Collection {...homeObjTwo} /> */}
             <Team />
             <FAQ />
         </>

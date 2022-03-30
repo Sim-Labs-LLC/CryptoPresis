@@ -1,6 +1,6 @@
 {
-  "name": "simlabs-webpage",
-  "version": "0.1.0",
+  "name": "cryptopresis-webpage",
+  "version": "2.0.0",
   "private": true,
   "dependencies": {
     "@3rdweb/sdk": "^1.32.0",

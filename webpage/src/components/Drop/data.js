@@ -43,3 +43,24 @@ export const homeObjTwo = {
     primary: true,
     darkText: false
 };
+
+export const homeObjThree = {
+    id: 'drops',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topline: 'Artist: Mundo',
+    headline: 'Bitcoin Volcano',
+    description1:
+        'The Bitcoin Volcano is here to revolutionize how the world mines Bitcoin. Using sustainable volcanic energy, El Salvador is a pioneer in cryptocurrency technology.', 
+    description2:    
+        'This piece by Salvadorean artist Mundo is his genesis NFT and holds aditional utility for its holders.',
+    buttonlabel: 'BUY ON OPENSEA',
+    link: '//opensea.io/assets/matic/0xb7d67be516e80f05259cddb9efa3523f72e2f912/2/',
+    imgStart: false,
+    img: require('../../assets/images/drop3.jpeg'),
+    alt: 'NFTs', 
+    dark: true,
+    primary: true,
+    darkText: false
+};
