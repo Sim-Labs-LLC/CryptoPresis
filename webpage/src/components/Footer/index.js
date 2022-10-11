@@ -21,6 +21,7 @@ import {
     SocialIcons,
     SocialIconLink,
     Img,
+    Img2,
     // ExternalLink
 } from './FooterElements';
 
@@ -63,7 +64,7 @@ const Footer = () => {
                                 © Copyright {new Date().getUTCFullYear()} • CryptoPresis • All Rights Reserved
                             </Content>
                             <Content>
-                                Powered by <Img src={require("../../assets/images/simlabs-logo.svg")} alt="logo"/> Sim Labs
+                                Powered by <Img2 src={require("../../assets/images/simlabs-logo.svg")} alt="logo"/> Sim Labs
                             </Content>
                         </WebsiteRights>
                         <SocialIcons>

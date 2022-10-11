@@ -134,6 +134,7 @@ margin-bottom: 12px;
 export const Content = styled.div`
 flex-direction: column;
 margin-top: 6px;
+text-align: center;
 `
 
 export const SocialIcons = styled.div`
@@ -153,6 +154,14 @@ font-size: 20px;
 export const Img = styled.img`
 height: 20px;
 width: 20px;
+`
+
+export const Img2 = styled.img`
+height: 20px;
+width: 20px;
+// display: block;
+margin-top: auto;
+margin-bottom: auto;
 `
 
 export const ExternalLink = styled.a`
