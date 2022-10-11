@@ -11,7 +11,7 @@ const network = NETWORK.eth;
 // General metadata for Ethereum
 const namePrefix = "CryptoPresi";
 const description = "CryptoPresis is a collection of 1821 algorithmically generated art pieces inspired by the President of El Salvador, Nayib Bukele. The first NFT project made with love from El Salvador to the world.";
-const baseUri = "ipfs://QmZcw3u5FVkEdUMKezvtWYZTnFHR1GQxebnAeQUtU3qbKE";
+const baseUri = "ipfs://QmeXKuRidDQ2Prxi6LW3TchgXkyoNq3MJNCk3xsEiGPkjt";
 
 const solanaMetadata = {
   symbol: "YC",

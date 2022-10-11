@@ -1,0 +1,41 @@
+{
+  "name": "Super Presi",
+  "description": "CryptoPresis is a collection of 1821 algorithmically generated art pieces inspired by the President of El Salvador, Nayib Bukele. The first NFT project made with love from El Salvador to the world.",
+  "image": "ipfs://QmeXKuRidDQ2Prxi6LW3TchgXkyoNq3MJNCk3xsEiGPkjt/393.png",
+  "dna": "2e740bebff36e22b95ade516a8c84f2dbb3db538",
+  "edition": 393,
+  "date": 1635441978393,
+  "creators": "ackermann.eth (twitter: @ackermann_eth), Capitan Capibara (twitter: @capitancapibara)",
+  "artist": "Pxl Plnktn (twitter: @PxlPlnktn)",
+  "attributes": [
+    {
+      "trait_type": "Backgrounds",
+      "value": "Super Saiyan Aura"
+    },
+    {
+      "trait_type": "Skin",
+      "value": "Tan Skin"
+    },
+    {
+      "trait_type": "Haircolor",
+      "value": "Blonde"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Saiyan Blue"
+    },
+    {
+      "trait_type": "Hats",
+      "value": "No Hat"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Normal Mouth"
+    },
+    {
+      "trait_type": "Special",
+      "value": "Legendary"
+    }
+  ],
+  "compiler": "CryptoPresis Art Engine"
+}

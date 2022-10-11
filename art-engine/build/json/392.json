@@ -1,0 +1,41 @@
+{
+  "name": "Spider Presi",
+  "description": "CryptoPresis is a collection of 1821 algorithmically generated art pieces inspired by the President of El Salvador, Nayib Bukele. The first NFT project made with love from El Salvador to the world.",
+  "image": "ipfs://QmeXKuRidDQ2Prxi6LW3TchgXkyoNq3MJNCk3xsEiGPkjt/392.png",
+  "dna": "f3a8d1ec0079ed3d1c95024e7178fd74f196e04c",
+  "edition": 392,
+  "date": 1635422802574,
+  "creators": "ackermann.eth (twitter: @ackermann_eth), Capitan Capibara (twitter: @capitancapibara)",
+  "artist": "Pxl Plnktn (twitter: @PxlPlnktn)",
+  "attributes": [
+    {
+      "trait_type": "Backgrounds",
+      "value": "Marvel Blue"
+    },
+    {
+      "trait_type": "Skin",
+      "value": "Spider Suit"
+    },
+    {
+      "trait_type": "Haircolor",
+      "value": "Normal Black"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "White Spectacles"
+    },
+    {
+      "trait_type": "Hats",
+      "value": "No Hat"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Normal"
+    },
+    {
+      "trait_type": "Special",
+      "value": "Legendary"
+    }
+  ],
+  "compiler": "CryptoPresis Art Engine"
+}
